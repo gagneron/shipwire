@@ -1,0 +1,103 @@
+span{
+	color:red;
+}
+
+table td{
+	padding:0px 4px;
+}
+
+h1{
+	display:inline;
+}
+
+.pagination ul{
+	list-style: none;
+	text-align:right;
+}
+
+.pagination li{
+	display:inline;
+	color:blue;
+	margin:0px 10px;
+	text-decoration: underline;
+
+}
+
+.pagination .liSelected{
+	text-decoration: none;
+	color:black;
+}
+
+.pagination li:hover{
+	color:lightblue;
+	cursor: pointer;
+}
+
+.pagination li:active{
+	color:darkblue;
+}
+
+.hidden{
+	/*visibility:hidden;*/
+	opacity:0.2;
+}
+
+/* TABLE STYLING ========================== */
+tbody tr td{
+	min-height:40px;
+	padding:5px;
+	vertical-align: top;
+	text-align:left;
+}
+tbody tr:nth-child(odd){
+	background-color: rgba(255,255,255,0.5);
+	
+}
+tbody tr:nth-child(even){
+	border-top:2px solid rgba(255,255,255,0.3);
+	border-bottom:2px solid rgba(255,255,255,0.3);
+}
+
+th:hover{cursor:pointer;}
+
+.productsTable .showing th, .productsTable .showing td{
+	display:table-cell;
+}
+
+.productsTable th, .productsTable td:not(td:last-child){
+	display:none;
+}
+.productsTable td{
+	display:none;
+}
+
+.productsTable th:first-child, .productsTable td:first-child{
+	display:table-cell;
+	padding:10px;
+}
+
+
+.productsTable td:first-child:hover{
+	cursor:pointer;
+	color:black;
+	-webkit-transform: scale(1.1);
+}
+
+.productsTable td:nth-child(2){  /* description */
+	width:40%;
+	max-width:400px;
+}
+
+/*input field styling ================= */
+input{width:100px;}
+textarea{
+	width:300px;
+	height:100px;
+
+}
+
+.btnEdit:hover, .btnDelete:hover, .btnSave:hover{
+	cursor:pointer;
+}
+
+

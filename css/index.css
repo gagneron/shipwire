@@ -1,0 +1,119 @@
+
+.errors li{
+	color: red;
+}
+
+fieldset{
+	margin-top: 25px;
+	margin-right:200px;
+	padding: 15px;
+	border: 2px solid #aaaaaa;
+	border-radius: 7px;
+	min-width:300px;
+	display:block;
+}
+
+
+.inputDiv{
+	position: relative;
+	margin:10px;
+}
+
+#nameDiv {
+	display: block;
+	text-align: center;
+}
+
+#nameDiv .errorBox{
+	left:auto;
+}
+
+#descriptionDiv {
+	float:right;
+	display:inline-block;
+
+}
+
+#descriptionDiv label:first-child{
+	display:block;
+
+}
+
+.errorBox{
+	visibility:hidden;
+	display:inline;
+	position:absolute;
+	padding:4px;
+	/*border:2px solid black;*/
+	border-radius: 10px;
+	background-color: rgba(255,50,50,0.5);
+	width:200px;
+	height:38px;
+	top:-26;
+	left:200;
+}
+input{
+	border-radius:5px;
+	padding:2px;
+	display:inline;
+	width:100px;
+	margin-bottom: 14px;
+}
+
+textarea{
+	border:2px solid transparent;
+}
+
+#nameDiv input{
+	width:200px;
+}
+
+
+label {
+	cursor: pointer;
+}
+
+.dimensions input + label {
+	margin-right: 100px;
+}
+
+.dimensions label:first-of-type{
+	display:block;
+	float:left;
+	width:70px;
+	margin-top:4px;
+}
+
+
+button {
+	background: #5cb85c;
+	border: 1px solid transparent;
+	border-color: #4cae4c;
+	color: #fafafa;
+	border-radius: 4px;
+	padding:6px 12px;
+}
+
+button:hover{
+	background: #4ca83a;
+}
+
+button#clear{
+	margin-left: 100px;
+	background: #5bc0de;
+	border-color: #46b8da;
+}
+
+button#clear:hover{
+	background: #3ba0be;
+}
+
+button[disabled]{
+	opacity:0.5;
+}
+
+@media screen and (max-width: 770px) {
+	#descriptionDiv{
+		float:none;
+	}
+}
